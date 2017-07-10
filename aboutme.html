@@ -21,7 +21,8 @@ h2 {color: darkblue}
 
 <h2>Biography</h2>
 
-<img id = 'myPhoto' src="Portfolio Pic.JPG" onMouseOver = "this.style.width='200px'" onMOuseOut = "this.style.width='100px'" alt="Profile Picture">
+<img onMouseOver = "bigImg(this)" onMouseOut = "normImg(this)" border="0" src="Portfolio Pic.JPG" alt="Profile Picture" width="32" height="32">
+
 
 <p>Hi, my name is Anokhi Mehta! I will be a junior at Leland High School in 
 the 2017-2018 school year. I am 16 years old and live in Almaden Valley
@@ -130,6 +131,18 @@ teaching teen girls how to code. </p>
 <img src="Midnight Ride Game.JPG" alt="Game" style="width:304px;height:228px">
 
 <p> Recently, we made a side scroller game in Scratch to practice using the coding we learned in GWC. The pictures above show some parts of the game. In my game, the motorbike has to jump over incoming traffic to get points and win.</p>
+<script>
+window.alert("Welcome to my webpage! Click ok to explore!")
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
 </body>
 
 </html>
