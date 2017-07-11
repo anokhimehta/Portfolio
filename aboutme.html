@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -17,11 +21,10 @@ h2 {color: darkblue}
 
 <h1>About Me:Anokhi Mehta</h1>
 
-
-
 <h2>Biography</h2>
 
-<img onMouseOver = "bigImg(this)" onMouseOut = "normImg(this)" border="0" src="Portfolio Pic.JPG" alt="Profile Picture" width="75" height="75">
+
+<img onMouseOver = "bigImg(this)" onMouseOut = "normImg(this)" border="0" src="Portfolio Pic.JPG" alt="Profile Picture" width="32" height="32">
 
 
 <p>Hi, my name is Anokhi Mehta! I will be a junior at Leland High School in 
@@ -29,7 +32,9 @@ the 2017-2018 school year. I am 16 years old and live in Almaden Valley
  with my mom, dad, and younger brother. I made this website as a project for 
 <a href="https://www.girlswhocode.com">Girls Who Code</a>, an organization that strives to reduce the gender gap by 
 teaching teen girls how to code. </p>
+<p id="bio" style="display:none">In my free time, I like to paint/draw and spend time with my family. I also enjoy bullet journaling, playing board games, watching movies and going to the mall with my friends</p>
 
+<button type="button" onclick="document.getElementById('bio').style.display='block'">Click here to learn more!</button>
 
 
 <h2>Some fun facts about me:</h2>
@@ -112,10 +117,11 @@ teaching teen girls how to code. </p>
   while two people were coding, the other two were doing the mechanical part directly on the robot. Throughout the process, we continued to
   switch roles so that we each got to experience every part, and it was a very fun porject in general. Here are some pictures and a video 
   from the past few days.</p>
+
  
-<img src="IMG_0221.jpg" alt="Robot" style="width:228px;height:228px">
-<img src="IMG_0224.jpg" alt="Robot" style="width:228px;height:228px">
- 
+<button onclick="document.getElementById('r1').src='IMG_0221.jpg'">1</button>
+<img id="r2" src="IMG_0224.jpg" alt="Robot" style="width:100px">
+<button onclick="document.getElementById('r2').src='IMG_0224.jpg'">2</button>
 <h2>My favorite sites</h2>
 
 
@@ -133,15 +139,16 @@ teaching teen girls how to code. </p>
 <p> Recently, we made a side scroller game in Scratch to practice using the coding we learned in GWC. The pictures above show some parts of the game. In my game, the motorbike has to jump over incoming traffic to get points and win.</p>
 <script>
 window.alert("Welcome to my webpage! Click ok to explore!")
+
 function bigImg(x) {
-    x.style.height = "115px";
-    x.style.width = "115px";
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
 }
 
-function normImg(x) {
-    x.style.height = "75px";
-    x.style.width = "75px";
-}
 </script>
 </body>
 
