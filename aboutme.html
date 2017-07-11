@@ -117,10 +117,11 @@ teaching teen girls how to code. </p>
   while two people were coding, the other two were doing the mechanical part directly on the robot. Throughout the process, we continued to
   switch roles so that we each got to experience every part, and it was a very fun porject in general. Here are some pictures and a video 
   from the past few days.</p>
+<img id="myImage" src="IMG_0221.jpg" alt="Robot" style="width:150px;height:150px">
 
-<img src="IMG_0221.jpg" alt="Robot" style="width:150px;height:150px">
-<img src="IMG_0224.jpg" alt="Robot" style="width:150px;height:150px">
-<img src="IMG_0215.jpg" alt="Robot" style="width:150px;height:150px">
+<p id="test"></p>
+
+<button onclick="document.getElementById('myImage').src=nextImage();">next image</button>
 
 <h2>My favorite sites</h2>
 
@@ -148,8 +149,17 @@ function normalImg(x) {
     x.style.height = "32px";
     x.style.width = "32px";
 }
+var nextImage = (function(){
+	var images = ["IMG_0221.jpg","IMG_0224.jpg","IMG_0215.jpg"]
+    var count = -1
+    return function(){
+    return images[++count%images.length];
+    }
+    }())
 
 </script>
+
+
 </body>
 
 </html>
